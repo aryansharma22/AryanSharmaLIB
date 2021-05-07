@@ -1,0 +1,10 @@
+
+{%block title%}
+Book
+{%endblock%}
+
+{%block content%}
+{% for td in user.Books.all%}
+<p><a href="/{{td.id}}">{{td.name}}</a></p>
+{%endfor%}
+{%endblock%}
